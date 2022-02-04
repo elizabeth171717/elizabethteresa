@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      
+      .wrapper{
+        margin: 0 auto;
+        padding: 30px 0;
+        width: 600px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(198, 198, 204);
+      }
+
+      .container {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+      }
+
+      header {
+        width: 80%;
+        
+        text-align: center;
+        padding: 30px 0;
+        border-bottom: 2px solid rgb(198, 198, 204);
+      }
+
+      .logo {
+        color: rgb(4, 70, 4);
+        margin-bottom: 30px;
+      }
+
+      span {
+        color: rgb(7, 121, 3);
+      }
+
+      .receipt {
+        width: 100%;
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       
+        padding: 50px 0;
+      }
+
+      .receipt-desc {
+       
+        width: 80%;
+       
+      }
+
+      .receipt-desc p {
+        margin-bottom: 20px;
+      }
+
+      .receipt-copy{
+        margin: 30px 0;
+       background-color: rgb(122, 122, 9);
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+
+      .btn {
+       margin-top: 20px;
+        border: none;
+        background-color: rgb(7, 121, 3);
+        color: rgb(255, 255, 255);
+        padding: 7px 8px;
+        border-radius: 5px;
+      }
+
+      /*table starts*/
+      .invoice-table {
+        border-collapse: collapse;
+        width: 100%;
+        background-color: rgb(198, 198, 204);
+      }
+
+      .invoice-table thead tr {
+        border-bottom: 1px solid #fff;
+      }
+
+      .invoice-table thead tr td {
+        font-size: 18px;
+        letter-spacing: 1px;
+        padding: 8px;
+        font-weight: bold;
+      }
+
+      .invoice-table tbody tr td {
+        border-right: 1px solid #fff;
+        padding: 8px;
+      }
+
+      .invoice-table tbody tr td:last-child {
+        border-right: none;
+      }
+
+      .invoice-table tfoot tr {
+        border-top: 1px solid #fff;
+      }
+
+      .invoice-table tfoot tr td {
+        font-size: 18px;
+        letter-spacing: 1px;
+        padding: 8px;
+        font-weight: bold;
+      }
+      /*table ends*/
+      
+      footer {
+        color: rgb(80, 78, 78);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0;
+      }
+
+      .social-icons {
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+        color: rgb(80, 78, 78);
+      }
+
+      .social-icons a {
+       
+        color: rgb(80, 78, 78);
+      }
+
+      .download-app {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+
+      }
+
+
+      .footer-desc {
+        color: rgb(80, 78, 78);
+        
+        text-align: center;
+        margin: 20px 0;
+        padding: 0 20px;
+      }
+      .download-app img{
+        width: 45%;
+        
+        
+      } 
+
+
+      @media (max-width:400px) {
+        .wrapper{
+         width: 100%;
+        
+       
+      }
+
+      .container {
+        width: 90%;
+     
+      }
+
+      header {
+        width: 80%;
+        
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+
+      footer {
+      
+        width: 100%;
+       
+      }
+
+      .download-app {
+        width: 80%;
+        
+      }
+
+      .footer-desc p{
+       
+        font-size: 12px;
+        
+      }
+
+      }
+      </style>
+  </head>
+  <body>
+      
+      <div class="wrapper">
+      <div class="container">
+        <header>
+            <div class="logo"><h1>fiverr<span>.</span></h1></div>
+            <h2>Your Proof Of Doing</h2>
+          </header>
+          <div class="receipt">
+            <div class="receipt-desc">
+              <p>Hi 
+                liz,</p>
+              <p>Congrats</p>
+              <p>
+                You've officially accomplished something today. Here's your proof of
+                doing:
+              </p>
+             </div>
+
+              <div class="receipt-copy">
+                <table class="invoice-table">
+                  <thead>
+                    <tr>
+                      <td>Item</td>
+                      <td width="20%" align="center">Qty</td>
+                      <td width="20%" align="right">Price</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="border-bottom: 1px solid #fff">
+                      <td>I will create a professional minimalist logo design - BASIC</td>
+                      <td align="center">× 1</td>
+                      <td align="right">$25</td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">1 Revision</td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">1 Included Version</td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">Logo Transparency</td>
+                    </tr>
+                    <tr style="border-top: 1px solid #fff">
+                      <td>Service Fee</td>
+                      <td colspan="2" align="right">$3.38</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td colspan="3" align="right">Total: $28.38</td>
+                    </tr>
+                  </tfoot>
+                </table>
+             </div>
+
+              <div class="receipt-desc">
+              <p>
+                In case you have yet to fill out the order requirements,  please do
+                so <span>here</span>, so kairachel451 can get started on your order.
+              </p>
+              <p>
+                <span>Download the Fiverr app</span> to track
+                your order updates!
+              </p>
+    
+              <p>
+                Thanks, <br />
+                The Fiverr Team
+              </p>
+              
+              </div>
+              <button class="btn">View Your Order</button>
+           </div>
+          </div>
+    
+    <footer>
+     
+            <div class="social-icons">
+           
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              
+            </div>
+    <div class="footer-desc">
+            <p>
+              This email was intended for you, because you signed up for Fiverr
+              | <span>Unsubscribe</span> | The links in this email will always direct to
+              <span>https://fiverr.com</span>. Learn about <span>email security</span> and <span>online safety</span>. ©
+              Fiverr International Ltd. 2021
+            </p>
+          </div>
+            <div class="download-app">
+                <img src="../image/apple.png" />
+                <img src="../image/google.png" />
+            </div>
+    </footer>
+  </div>
+    </div>
+  </body>
+</html>

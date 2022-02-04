@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Groupon</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+     .wrapper {
+        margin:  0 auto;
+        width: 600px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      
+      header img {
+        width: 35%;
+      }
+     
+      .container {
+       display: grid;
+       grid-template-columns: 50% 50%;
+       background-color: rgb(248, 244, 244);
+
+      }
+
+      .promo-box {
+        width: 100%;
+        padding: 10px;
+      }
+
+      .box-img {
+        width: 100%;
+      }
+     
+      .box-img img{
+        width: 100%;
+
+      }
+
+      .box-info {
+        width: 100%;
+      }
+
+      h4 {
+      margin-top: 5px;
+    } 
+    
+    .grey {
+      color: rgb(128, 128, 128);
+     
+    }
+    
+    .promotion {
+      display: flex;
+      flex-direction: column;
+      margin: 12px 0;
+    }
+    
+    .price-dropdown {
+      width: 40%;
+      display: flex;
+      justify-content: space-between;
+     
+    }
+    .price {
+     
+     color:rgb(128, 128, 128);
+      text-decoration: line-through;
+    }
+    
+    .promo-price {
+      font-weight: bold;
+      color: rgb(3, 129, 3);
+    }
+
+    .btn {
+     width: 50%;
+      margin-top: 10px;
+      background-color: rgb(3, 129, 3);
+      color: white;
+      border: none;
+      padding: 5px ;
+      border-radius: 5px;
+    }
+
+    footer {
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(128, 128, 128);
+}
+      
+
+.f-title {
+  width: 80%;
+  text-align: center;
+  color: rgb(3, 129, 3);
+}
+
+.apps-container {
+width: 50%;
+display: flex;
+justify-content: space-between;
+
+
+margin: 20px 0;
+
+}
+
+.apps-container img{
+width: 45%;
+
+}
+
+.navigation {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid rgb(0, 0, 0);
+  padding-top: 20px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border-right: 1px solid rgb(0, 0, 0);
+  padding-right:10px;
+}
+
+.footer-text {
+  width: 80%;
+  margin: 20px 0;
+  text-align: center;
+  
+}
+
+.social-links {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+@media (max-width:400px) {
+
+  .wrapper {
+        
+        width: 100%;
+        max-width: 100%;
+       
+      }
+  
+    
+      header {
+        width: 100%;
+       
+      }
+     
+      .container {
+
+      grid-template-columns: 100%;
+     
+      }
+
+      .promo-box {
+        width: 100%;
+        padding: 0;
+      }
+
+      .box-img {
+        width: 100%;
+
+      }
+     
+      .box-img img{
+        width: 100%;
+      }
+
+      .box-info {
+        width: 100%;
+      }
+
+      h4 {
+        
+      font-size: 12px;
+      margin: 5px 0;
+      } 
+
+     .grey {
+    font-size: 12px;
+    }
+
+   .promotion {
+    margin: 5px 0
+   }
+
+    .price-dropdown {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  font-size: 12px;
+   }
+
+  .btn {
+  width: 30%;
+  margin: 5px 0;
+ 
+  padding: 5px 7px;
+   }
+
+   footer {
+  width: 100%;
+ 
+ 
+    }
+      
+
+  .f-title {
+    width: 80%;
+    font-size: 12px;
+   }
+
+.apps-container {
+width: 60%;
+display: flex;
+justify-content: space-between;
+margin: 10px 0;
+}
+
+.apps-container img{
+width: 40%;
+
+}
+
+.navigation {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation a {
+  padding-right:5px;
+ font-size: 8px;
+}
+
+
+
+.footer-text {
+  width: 80%;
+  margin: 10px 0;
+  
+  font-size: 12px;
+}
+
+
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <img src="../image/groupon.jpg" />
+      </header>
+      <div class="container">
+        <!--box starts-->
+        <div class="promo-box">
+          <div class="box-img"><img src="../image/1.jpg" alt="" /></div>
+          <div class="box-info">
+            <h4>One Year of Laser Hair Removal</h4>
+            <p class="grey">
+              NYAH Med Spa </br>
+              Atlanta, Ga
+            </p>
+            
+            <div class="promotion">
+              <div class="price-dropdown">
+                <p class="price">$1200</p>
+                <p class="promo-price">$89</p>
+              </div>
+              <button class="btn">View Deal</button>
+            </div>
+          </div>
+        </div>
+        <!--box ends-->
+
+        <!--box starts-->
+        <div class="promo-box">
+          <div class="box-img"><img src="../image/2.jpg" alt="" /></div>
+          <div class="box-info">
+            <h4>Whole Body Cryotherapy</h4>
+            <p class="grey">
+             Cryo Evolution</br>
+              Chamblee, Ga
+            </p>
+            
+            <div class="promotion">
+              <div class="price-dropdown">
+                <p class="price">$60</p>
+                <p class="promo-price">$25</p>
+              </div>
+              <button class="btn">View Deal</button>
+            </div>
+          </div>
+        </div>
+        <!--box ends-->
+
+        <!--box starts-->
+        <div class="promo-box">
+          <div class="box-img"><img src="../image/3.jpg" alt="" /></div>
+          <div class="box-info">
+            <h4>Massage with Add-On</h4>
+            <p class="grey">
+              Massage Heights</br>
+              Atlanta, GA
+            </p>
+            
+            <div class="promotion">
+              <div class="price-dropdown">
+                <p class="price">$139.99</p>
+                <p class="promo-price">$69.99</p>
+              </div>
+              <button class="btn">View Deal</button>
+            </div>
+          </div>
+        </div>
+        <!--box ends-->
+
+        <!--box starts-->
+        <div class="promo-box">
+          <div class="box-img"><img src="../image/4.jpg" alt="" /></div>
+          <div class="box-info">
+            <h4>20 or 40 Units of Botox</h4>
+            <p class="grey">
+              LifeSpring Antiaging and Aesthetic </br>
+              Atlanta, GA
+            </p>
+            
+            <div class="promotion">
+              <div class="price-dropdown">
+                <p class="price">$280</p>
+                <p class="promo-price">$159</p>
+              </div>
+              <button class="btn">View Deal</button>
+            </div>
+          </div>
+        </div>
+        <!--box ends-->
+
+        <!--box starts-->
+        <div class="promo-box">
+          <div class="box-img"><img src="../image/5.jpg" alt="" /></div>
+          <div class="box-info">
+            <h4>Parking Pass (ATL)</h4>
+            <p class="grey">
+             Elite Airport Parking</br>
+             East Point, Ga
+            </p>
+            
+            <div class="promotion">
+              <div class="price-dropdown">
+                <p class="price">$45</p>
+                <p class="promo-price">$27</p>
+              </div>
+              <button class="btn">View Deal</button>
+            </div>
+          </div>
+        </div>
+        <!--box ends-->
+
+        <!--box starts-->
+        <div class="promo-box">
+          <div class="box-img"><img src="../image/7.jpg" alt="" /></div>
+          <div class="box-info">
+            <h4>Massage - Couples</h4>
+            <p class="grey">
+             Rejuvenate Body Spa</br>
+            Sandy Springs, Ga
+            </p>
+            
+            <div class="promotion">
+              <div class="price-dropdown">
+                <p class="price">$90</p>
+                <p class="promo-price">$59</p>
+              </div>
+              <button class="btn">View Deal</button>
+            </div>
+          </div>
+        </div>
+        <!--box ends-->
+
+        <!--box starts-->
+        <div class="promo-box">
+          <div class="box-img"><img src="../image/8.jpg" alt="" /></div>
+          <div class="box-info">
+            <h4>Boxtox Injections</h4>
+            <p class="grey">
+             Skin Matters Med Spa</br>
+              Atlanta, Ga
+            </p>
+            
+            <div class="promotion">
+              <div class="price-dropdown">
+                <p class="price">$240</p>
+                <p class="promo-price">$195</p>
+              </div>
+              <button class="btn">View Deal</button>
+            </div>
+          </div>
+        </div>
+        <!--box ends-->
+
+        <!--box starts-->
+        <div class="promo-box">
+          <div class="box-img"><img src="../image/9.jpg" alt="" /></div>
+          <div class="box-info">
+            <h4>Weight Loss Program</h4>
+            <p class="grey">
+             Complete Healthcare Medical Center</br>
+             Duluth, Ga
+            </p>
+            
+            <div class="promotion">
+              <div class="price-dropdown">
+                <p class="price">$504</p>
+                <p class="promo-price">$252</p>
+              </div>
+              <button class="btn">View Deal</button>
+            </div>
+          </div>
+        </div>
+        <!--box ends-->
+      </div>
+      <footer>
+<div class="f-title">
+  <h3>Get the Freee Groupon App </h3>
+</div>
+        <div class="apps-container">
+          <img src="../image/google.png">
+          <img src="../image/apple.png">
+        </div>
+
+        <div class="navigation">
+          <a href="#">Groupon Merchant</a>
+          <a href="#">FAQ</a>
+          <a href="#">Gift Cards</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-text"><p> You are receiving this email because you signed up to receive Groupon communications.
+          To adjust how often you receive future Groupon emails, including unsubscribing, click here.
+          Delivered by Groupon, Inc. 600 W. Chicago Avenue, Suite 400, Chicago, IL 60654, USA.</p>
+        </div>
+
+          <div class="social-links">
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+       
+      </footer>
+     
+    </div>
+  </body>
+</html>
